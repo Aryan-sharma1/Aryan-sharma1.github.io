@@ -1,0 +1,266 @@
+*{
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0px;
+    
+}
+html{
+    scroll-behavior: smooth;
+}
+hr{
+    margin: 0px;
+}
+body{
+    margin: 0px;
+}
+
+.navbar{
+    display: flex;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    transition: all 0.7s ease-in-out;
+    
+}
+.logo img{
+    height: 70px;
+    width: 70px;
+    border-radius: 50px;
+    border: 2px solid white;
+}
+.nav-list{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+.nav-list li a{
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+    margin: 10px;
+
+}
+.background{
+    background: rgba(0, 0, 0, 0.7) url('../bg.jpg');
+    background-size: cover;
+    background-blend-mode: darken;
+}
+#Sr{
+    position: absolute;
+    top: 25px;
+    right: 10px;
+
+}
+#search{
+    font-size: 16px;
+    padding: 5px 10px;
+    border-radius: 7px;
+}
+input[type='button']{
+    padding: 5px 10px;
+    border-radius: 7px;
+    background: none;
+    border: 2px solid white;
+    color: white;
+    cursor: pointer;
+}
+.first{
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+.first img{
+    margin: 50px;
+    height: 300px;
+    width: 300px;
+    border-radius: 150px;
+    border: 2px solid white;
+
+}
+.white{
+    color: white;
+}
+.first div{
+    display: inline-block;
+}
+.button{
+    background: none;
+    border: 2px solid white;
+    margin: 10px;
+    padding: 10px 25px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.second{
+    display: flex;
+    height: 400px;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 80%;
+    margin: auto;
+}
+.rt{
+ 
+    flex-direction: row-reverse;
+}
+ .thumbnail{
+     margin-top: 25px;
+    height: 270px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+.right{
+    margin: 0px 25px;
+
+}
+#contact{
+    background: #f6f5f4;
+    height: 100vh;
+}
+.text-aling{
+    text-align: center;
+    padding: 10px;
+}
+#form{
+   
+    max-width: 1010px;
+    margin:  15px auto ;
+}
+#form .input{
+    width: 100%;
+    font-size: 18px;
+    border: 2px solid black;
+    border-radius: 6px;
+    margin: 10px 0px;
+    padding: 3px 5px;
+}
+#form .btn-sm{
+    color: black;
+    border: 2px solid black;
+}
+footer{
+    margin: 0px;
+}
+
+.text-footer{
+    text-align: center;
+    padding: 30px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.burger{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+}
+.line{
+    height: 4px;
+    width: 35px;
+    border-radius:30px ;
+    background-color: white;
+    margin: 5px;
+    display: none;
+}
+@media only screen and (max-width:1050px) {
+     .nav-list{
+         margin: 20px;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         padding: 0px;
+     }
+     .nav-list li{
+        margin: 10px;
+     }
+     .navbar{
+         height: 427px;
+         flex-direction: column;
+         align-items: center;
+         justify-content: center;
+        
+     }
+     #Sr{
+         display: none;
+        
+     }
+     .logo{
+         display: flex;
+        justify-content: center;
+     }
+    .line{
+        display: block;
+
+    }
+    .h-nav{
+        height: 50px;
+    }
+    .v-resp{
+        opacity: 0%;
+    }
+  
+}
+@media only screen and (max-width:1070px){
+.first{
+    flex-direction: column;
+
+}
+.second{
+    flex-direction: column;
+    height: 780px;
+}
+.art{
+    margin: 15px;
+}
+#form{
+   max-width: 500px; 
+   
+}
+.first img
+{
+    height: 200px;
+    width: 200px;
+}
+}
+@media only screen and (max-width:550px){
+    .nav-list{
+        margin: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0px;
+    }
+    .nav-list li{
+       margin: 10px;
+    }
+    .navbar{
+        height: 427px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+       
+    }
+    #Sr{
+        display: none;
+       
+    }
+    .logo{
+        display: flex;
+       justify-content: center;
+    }
+   .line{
+       display: block;
+
+   }
+   .h-nav{
+       height: 50px;
+   }
+   .v-resp{
+       opacity: 0%;
+   }
+#form{
+    width: 70%;
+} 
+}
